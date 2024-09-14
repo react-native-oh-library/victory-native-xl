@@ -1,60 +1,13 @@
-[![Victory Native](https://oss.nearform.com/api/banner?badge=victory&text=victory+native&bg=9c2f1e)](https://commerce.nearform.com/open-source/victory-native/)
+# @react-native-oh-tpl/victory-native-xl
 
-<div align="center">
-  <strong>
-    high-performance charts powered by D3, Skia, and Reanimated for React Native.
-  </strong>
+本项目基于 [victory-native-xl](https://github.com/FormidableLabs/victory-native-xl)
 
-  <br />
-  <br />
+## 文档地址 / Documentation URL 
 
-  <a href="https://npmjs.com/package/victory-native">
-    <img alt="weekly downloads" src="https://img.shields.io/npm/dw/victory-native.svg">
-  </a>
-  <a href="https://npmjs.com/package/victory-native">
-    <img alt="current version" src="https://img.shields.io/npm/v/victory-native.svg">
-  </a>
-  <a href="https://github.com/FormidableLabs/victory-native/actions">
-    <img alt="build status" src="https://github.com/FormidableLabs/victory/actions/workflows/ci.yml/badge.svg">
-  </a>
+[中文 / Chinese](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-cn/victory-native-xl.md)
 
-  <a href="https://github.com/FormidableLabs/victory-native-xl#maintenance-status">
-    <img alt="Maintenance Status" src="https://img.shields.io/badge/maintenance-active-green.svg" />
-  </a>
-</div>
+[英文 / English](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-en/victory-native-xl.md)
 
-<p>&nbsp;</p>
+## 请悉知 / Acknowledgements
 
-<div align="center">
-
-https://github.com/FormidableLabs/victory-native-xl/assets/12721310/20bada2d-9903-4fe1-9b5f-3b516c0d7428
-
-</div>
-
-## Installation
-
-Start by installing the peer dependencies of `victory-native` – React Native Reanimated, Gesture Handler, and Skia:
-
-```shell
-yarn add react-native-reanimated react-native-gesture-handler @shopify/react-native-skia
-```
-
-For Reanimated, you'll need to add `"react-native-reanimated/plugin"` to your `plugins` list in your `babel.config.js` config file.
-
-Then install `victory-native`:
-
-```shell
-yarn add victory-native
-```
-
-To get started and read more about the API, view the [docs here](https://formidable.com/open-source/victory-native).
-
-## LICENSE
-
-MIT
-
-## Maintenance Status
-
-**Active:** Nearform is actively working on this project, and we expect to continue for work for the foreseeable future. Bug reports, feature requests and pull requests are welcome.
-
-[maintenance-image]: https://img.shields.io/badge/maintenance-active-green.svg
+本项目基于 [The MIT License (MIT)](https://www.mit-license.org/) ，请自由地享受和参与开源。
