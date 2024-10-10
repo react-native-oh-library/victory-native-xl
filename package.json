@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/victory-native-xl",
-  "version": "41.1.0-0.0.1",
+  "version": "41.1.0-0.0.2",
   "private": false,
   "license": "MIT",
   "repository": {
@@ -25,7 +25,8 @@
     "d3-scale": "^4.0.2",
     "d3-shape": "^3.2.0",
     "react-fast-compare": "^3.2.2",
-	"victory-native": "^41.1.0"
+	  "victory-native": "41.1.0",
+    "its-fine": "^1.2.5"
   },
   "peerDependencies": {
     "react": "*",
