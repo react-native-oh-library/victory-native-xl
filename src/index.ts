@@ -49,3 +49,4 @@ export { Pie, type PieSliceData } from "victory-native";
 
 export { useSlicePath } from "victory-native";
 export { useSliceAngularInsetPath } from "victory-native";
+export { useChartTransformState } from "victory-native";
