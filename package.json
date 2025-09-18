@@ -1,11 +1,11 @@
 {
-  "name": "@react-native-oh-tpl/victory-native-xl",
-  "version": "41.1.0-0.0.2",
+  "name": "@react-native-ohos/victory-native-xl",
+  "version": "41.17.4",
   "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FormidableLabs/victory-native-xl"
+    "url": "https://github.com/react-native-oh-library/victory-native-xl"
   },
   "harmony": {
     "alias": "victory-native"
@@ -24,16 +24,17 @@
   "dependencies": {
     "d3-scale": "^4.0.2",
     "d3-shape": "^3.2.0",
+    "its-fine": "^1.2.5",
     "react-fast-compare": "^3.2.2",
-	  "victory-native": "41.1.0",
-    "its-fine": "^1.2.5"
+    "react-native-reanimated": "3.18.0"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*",
-    "@shopify/react-native-skia": ">=1.2.3",
-    "react-native-reanimated": ">=3.0.0",
-    "react-native-gesture-handler": ">=2.0.0"
+    "@react-native-ohos/react-native-skia": "file:packages/react-native-ohos-react-native-skia-1.3.7.tgz",
+    "@react-native-ohos/react-native-gesture-handler": "file:packages/react-native-ohos-react-native-gesture-handler-2.23.1.tgz",
+    "@react-native-ohos/react-native-reanimated": "file:packages/react-native-ohos-react-native-reanimated-3.18.0.tgz",
+    "@shopify/react-native-skia": "^1.3.7",
+    "react": "18.3.1",
+    "react-native": "0.77.1"
   },
   "devDependencies": {
     "@types/d3-scale": "^4.0.3",

@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "victory-native-xl",
+        "License": "MIT License",
+        "License File": " LICENSE ",
+        "Version Number": "41.17.4",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/FormidableLabs/victory-native-xl",
+        "Description": "A charting library for React Native with a focus on performance and customization."
+    }
+]
