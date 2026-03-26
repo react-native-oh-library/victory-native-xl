@@ -1,6 +1,10 @@
 # Changelog
 ## 鸿蒙化Log
 
+### v41.17.5
+
+- release version 41.17.5
+
 ### v41.17.5-rc.1
 
 - pre-release version 41.17.5-rc.1
