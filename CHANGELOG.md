@@ -1,6 +1,10 @@
 # Changelog
 ## 鸿蒙化Log
 
+### v41.18.0-rc.1
+
+- 升级至 victory-native@41.20.2
+
 ### v41.17.5
 
 - release version 41.17.5

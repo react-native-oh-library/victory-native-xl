@@ -1,7 +1,11 @@
 /**
  * Cartesian chart exports (including useful types)
  */
-export { CartesianChart } from "./cartesian/CartesianChart";
+export {
+  CartesianChart,
+  type CartesianActionsHandle,
+  type CartesianChartRef,
+} from "./cartesian/CartesianChart";
 export { PolarChart } from "./polar/PolarChart";
 
 
