@@ -6,7 +6,7 @@
 
 [中文 / Chinese](https://gitcode.com/CPF-RN/usage-docs/blob/master/zh-cn/victory-native-xl.md)
 
-[英文 / English](https://gitcode.com/CPF-RN/usage-docs/blob/master/zh-en/victory-native-xl.md)
+[英文 / English](https://gitcode.com/CPF-RN/usage-docs/blob/master/en/victory-native-xl.md)
 
 ## 请悉知 / Acknowledgements
 
