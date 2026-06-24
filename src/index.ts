@@ -1,12 +1,16 @@
 /**
  * Cartesian chart exports (including useful types)
  */
-export { CartesianChart } from "./cartesian/CartesianChart";
+export {
+  CartesianChart,
+  type CartesianActionsHandle,
+  type CartesianChartRef,
+} from "./cartesian/CartesianChart";
 export { PolarChart } from "./polar/PolarChart";
-
 
 export { type CurveType } from "victory-native";
 export { type RoundedCorners } from "victory-native";
+export { type AxisScaleType, type AxisScales } from "victory-native/src/types";
 
 export { useAnimatedPath } from "victory-native";
 export { AnimatedPath } from "victory-native";
