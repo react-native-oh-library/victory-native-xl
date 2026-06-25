@@ -1,6 +1,14 @@
 # Changelog
 ## 鸿蒙化Log
 
+### v41.18.0-rc.1
+
+- sync upstream victory-native@41.20.2
+- CartesianChart: add ref API, logarithmic axis, View onLayout, scroll+scrubbing fix
+- PolarChart: move onLayout to parent View (keep ContextBridge OHOS fix)
+- export CartesianChartRef, AxisScaleType, AxisScales
+- pre-release version 41.18.0-rc.1
+
 ### v41.17.5
 
 - release version 41.17.5

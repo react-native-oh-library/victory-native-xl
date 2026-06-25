@@ -1,6 +1,6 @@
 # @react-native-ohos/victory-native-xl
 
-本项目基于 [victory-native-xl@v41.17.4](https://github.com/FormidableLabs/victory-native-xl/tree/victory-native%4041.17.4)
+本项目基于 [victory-native-xl@v41.20.2](https://github.com/FormidableLabs/victory-native-xl/tree/victory-native%4041.20.2)
 
 ## 文档地址 / Documentation URL 
 
