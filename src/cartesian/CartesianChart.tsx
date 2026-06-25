@@ -1,7 +1,7 @@
 import * as React from "react";
 import { View, type LayoutChangeEvent } from "react-native";
 import { Canvas, Group, type CanvasRef } from "@shopify/react-native-skia";
-import { useSharedValue } from "react-native-reanimated";
+import { useSharedValue, useAnimatedReaction, runOnJS } from "react-native-reanimated";
 import {
   type ComposedGesture,
   Gesture,
@@ -53,7 +53,7 @@ import {
   useCartesianTransformContext,
 } from "victory-native/src/cartesian/contexts/CartesianTransformContext";
 import { downsampleTicks } from "victory-native/src/utils/tickHelpers";
-import { GestureHandler } from "victory-native/src/shared/GestureHandler";
+import { GestureHandler } from "../shared/GestureHandler";
 import { boundsToClip } from "victory-native/src/utils/boundsToClip";
 import { normalizeYAxisTicks } from "victory-native/src/utils/normalizeYAxisTicks";
 import { createFallbackChartState } from "victory-native/src/cartesian/utils/createFallbackChartState";
@@ -113,6 +113,8 @@ type CartesianChartProps<
     pan?: PanTransformGestureConfig;
     pinch?: PinchTransformGestureConfig;
   };
+  /** Optional hook for ScrollView coordination (e.g. disable scroll on pan/pinch). */
+  onTransformInteractionChange?: (active: boolean) => void;
   customGestures?: ComposedGesture;
   actionsRef?: MutableRefObject<CartesianActionsHandle<
     | ChartPressState<{
@@ -176,11 +178,33 @@ function CartesianChartContent<
   frame,
   transformState,
   transformConfig,
+  onTransformInteractionChange,
   customGestures,
   actionsRef,
   viewport,
   ref,
 }: CartesianChartProps<RawData, XK, YK>) {
+  const onTransformInteractionChangeRef = useFunctionRef(
+    onTransformInteractionChange,
+  );
+
+  useAnimatedReaction(
+    () =>
+      transformState
+        ? transformState.panActive.value || transformState.zoomActive.value
+        : false,
+    (active, prev) => {
+      if (
+        !onTransformInteractionChangeRef.current ||
+        prev === null ||
+        active === prev
+      ) {
+        return;
+      }
+      runOnJS(onTransformInteractionChangeRef.current)(active);
+    },
+  );
+
   const [size, setSize] = React.useState({ width: 0, height: 0 });
   const chartBoundsRef = React.useRef<ChartBounds | undefined>(undefined);
   const xScaleRef = React.useRef<
